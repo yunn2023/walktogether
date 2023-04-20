@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::: index page :::</title>
+
+    <!-- 폰트 됨 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <style>
+        .container {
+            width: 100%;
+            height: 100vh;
+            /* 밑에꺼 검은색으로 불투명한거 */
+            background: linear-gradient(rgba(249, 247, 247, 0.8),rgba(249, 247, 247, 0.8)),url("{% static 'frontapp\images\index.png' %}");
+        }
+
+        button {
+            font-size: 20px;
+        }
+        
+        p {
+            font-size: 50px;      
+            font-weight : bold;     
+        }
+    </style> 
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><a href="#">같이걸을까</a></h1>
+            
+            <div class="nav">
+            </div>
+        </div>
+
+        <div class="hero">
+            <h2>같이걸을까1</h2>
+
+            <p>
+                같이걸을까2
+            </p>
+            {% comment %} <p>
+                    동물보호관리시스템(잊지마멍멍)
+            </p>
+            <br/>
+            <p>
+                <img src="{% static 'frontapp\images\icon\icon_kepco.png' %}" alt="" width="25" height="25" class="d-inline-block align-text-center">
+                KEPCO_Digital_Bootcamp 1기 Class B 3조팀 멍멍수호대 
+            </p>
+            <br/>
+
+            <button>
+                <strong>
+                카카오톡
+                </strong>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
