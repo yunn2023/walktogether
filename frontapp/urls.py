@@ -27,5 +27,5 @@ urlpatterns = [
     path('detailView/', views.detailView),
     path('direction/', views.direction),
     path('favorite/', views.favorite)
-    
+
 ]

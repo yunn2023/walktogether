@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
 <head>
       <!-- 반응형 웹 적용을 위한 meta 정의 -->
@@ -29,11 +30,11 @@
             crossorigin="anonymous"></script>
       <br/>
       <!-- 찜항목 이미지 -->
-      <img src='static\frontapp\images\찜항목.png' class="rounded-4" alt="찜항목" 
+      <img src="{% static 'frontapp/images/찜항목.png' %}" class="rounded-5" alt="찜항목" 
             height="auto" width="30%">
       <br/>
       <!-- 찜항목 - 이미지 테스트 -->
-      <img src='static\frontapp\images\test.jpg' alt="test" 
+      <img src="{% static 'frontapp/images/test.jpg' %}" alt="test" 
             height="50%" width="50%">
       <br/>
 </body>

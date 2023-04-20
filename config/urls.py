@@ -21,21 +21,12 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     ### http://127.0.0.1:8000/
-        ### index 시작페이지
-    path('index.html', fView.main),
-    path('index', fView.main),  
-    path('intro', fView.index),
-    path('', fView.index),
+    # ### index 시작페이지
     
-    # path('index/', fView.index),
+    path('', fView.index),
+    path('index/', fView.index),
     path('main/', fView.main),
     path('detailView/', fView.detailView),
     path('direction/', fView.direction),
     path('favorite/', fView.favorite)
-    
-    # path('index/', fView.index),
-    # path('main/', fView.main),
-    # path('detailView/', fView.detailView),
-    # path('direction/', fView.direction),
-    # path('favorite/', fView.favorite)
 ]
