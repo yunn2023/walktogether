@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ::: 찜 목록 ::: </title>
+    <script type="text/javascript">
+        function goBack(){
+            history.go(-1);
+        }
+    </script>
+</head>
+<body>    
+    <div>
+        </div>
+        {% for data in jjim_list %}
+            <tr>
+                {{ data }}
+            </tr>   
+        {% endfor %}
+        <br/>
+        <button onClick="goBack()">뒤로가기</button>
+        </div>
+    </div>
+</body>
+</html>
+
+

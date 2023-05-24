@@ -29,37 +29,32 @@
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
             crossorigin="anonymous"></script>
     
-    
-    <!-- <img src="{% static 'frontapp/images/index.png' %}" class="img-fluid" alt="..."> -->
-    
-    <img src="{% static 'frontapp/images/index_1.png' %}" width=auto height=auto alt="index메인이미지">
-    
-    <!-- 테스트 해볼 것 -->
-    <!-- 사진 위에 버튼 처리하기 -->
-    <!-- 사진 위에 이미지로 버튼 처리하기 -->
-
+    <!-- <div class="d-grid gap-2 col-5 mx-auto"> -->
+    <div>
+        <img src="{% static 'frontapp/images/index_1.png' %}" alt="index메인이미지">
+            <!-- <button type="button" onclick="javascript:sensorBtnClick('btn1');">
+                <img src="{% static 'frontapp/images/kakao_login_large_wide.png' %}">
+            </button> -->
+    </div>
     <!-- 로그인 버튼 처리하기 -->
-    <div class="d-grid gap-2 col-5 mx-auto">
+    <!-- <div class="d-grid gap-2 col-5 mx-auto">
         <button class="btn btn-primary btn-warning btn-lg" type="button">
             <img src="{% static 'frontapp/images/icon/icon_kakaotalk.png' %}" 
                 width="7%" height="auto" alt="카카오톡icon">카카오톡으로 로그인하기</button>
-    </div>
-    
-    <!-- 로그인 버튼 클릭 시 일단 메인 화면으로 넘어가게 설정하기 -->
-    
-    <!-- 카드 위에 텍스트 넣는 방법 -->
-    {% comment %} <div class="card text-bg-dark">
-        <img src="{% static 'frontapp/images/index.png' %}" class="card-img" alt="...">
-        <div class="card-img-overlay">
-            <h5 class="card-title">같이걸을까</h5>
-            <p class="card-text">걷기 좋은 산책로를 추천해드려요</p>
-            <p class="card-text"><small>같이걸을까</small></p>
-        </div>
-    </div> {% endcomment %}
+    </div> -->
 
-    {% comment %} <div class = "footer" style ="color: black; text-align: center; font-size: 15px;" width="30%">
+    <!-- 카카오톡 공식 이미지로 로그인 버튼 처리하기 -->
+    <!-- <div class="d-grid gap-2 col-5 mx-auto">
+        <button class="btn btn-primary btn-warning btn-lg" type="button">
+            <img src="{% static 'frontapp/images/kakao_login_large_wide.png' %}">
+        </button>
+    </div> -->
+
+    <!-- 로그인 버튼 클릭 시 메인 화면으로 넘어가게 설정하기 -->
+
+    <!-- <div class = "footer" style ="color: black; text-align: center; font-size: 15px;" width="30%">
         <p><br>Copyright ⓒ 2023 <img src="{% static 'frontapp/images/icon/icon_kepco.png' %}" width="2%"> KEPCO Digital Boot Camp 1기_같이걸을래 프로젝트. All Rights Reserved.</p>
-    </div> {% endcomment %}
+    </div> -->
     <br/>
 </body>
 </html>

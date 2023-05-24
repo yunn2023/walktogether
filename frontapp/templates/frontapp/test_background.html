@@ -1,0 +1,24 @@
+<div class="container">
+    <picture class="bg-image">
+      <source type="image/webp" ... />
+      <img ... />
+    </picture>
+    <h1>Background image test</h1>
+  </div>
+  <style>
+    .container {
+      position: relative;
+    }
+    h1 {
+      position: relative;
+    }
+    .bg-image {
+      position: absolute;
+      inset: 0;
+    }
+    .bg-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>

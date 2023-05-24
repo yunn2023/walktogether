@@ -1,0 +1,27 @@
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js"
+  integrity="sha384-dpu02ieKC6NUeKFoGMOKz6102CLEWi9+5RQjWSV0ikYSFFd8M3Wp2reIcquJOemx" crossorigin="anonymous"></script>
+<script>
+  Kakao.init('c089c8172def97eb00c07217cae17495'); // 사용하려는 앱의 JavaScript 키 입력
+</script>
+
+<button class="api-btn" onclick="unlinkApp()">앱 탈퇴하기</button>
+
+<script>
+  function unlinkApp() {
+    Kakao.API.request({
+      url: '/v1/user/unlink',
+    })
+      .then(function(res) {
+        alert('success: ' + JSON.stringify(res));
+        deleteCookie();
+      })
+      .catch(function(err) {
+        alert('fail: ' + JSON.stringify(err));
+      });
+  }
+
+  // 아래는 데모를 위한 UI 코드입니다.
+  function deleteCookie() {
+    document.cookie = 'authorize-access-token=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  }
+</script>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ::: Main Page ::: </title>
+</head>
+<body>
+    {% if mem_id %}
+        <p>{{ mem_id }}님 환영합니다.</p>
+        <button> <a href="/viewapp/viewCourse.html">코스 둘러보기</a></button>
+    {% else %}
+        <button>
+            <a href="/users/signin/kakao/login">
+                <img src="https://developers.kakao.com/tool/resource/static/img/button/login/full/ko/kakao_login_medium_narrow.png" alt="카카오 로그인" />
+            </a>
+        </button>
+    {% endif %}
+
+</body>
+</html>
