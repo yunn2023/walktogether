@@ -26,7 +26,8 @@ urlpatterns = [
     path('', fView.index),
     path('index/', fView.index),
     path('main/', fView.main),
+    path('map/', fView.map),
     path('detailView/', fView.detailView),
-    path('direction/', fView.direction),
-    path('favorite/', fView.favorite)
+    path('favorite/', fView.favorite),
+    path('direction/', fView.direction)
 ]

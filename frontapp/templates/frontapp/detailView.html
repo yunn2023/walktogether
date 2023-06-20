@@ -26,12 +26,12 @@
       <!-- 이미지 가운데 정렬 -->
 
       <!-- css 적용 테스트 해보기 -->
-      <!--<style>
+      <style>
             img {display:block; 
                   margin:auto;}
             *margin
             #wrap
-      </style> -->
+      </style>
 </head>
 <body style = "background-color:#d6ecfa;">
       <!-- 부트스트랩 js 적용 -->
@@ -41,23 +41,14 @@
       <br/>
       <!-- <p class="text-center">상세화면</p> -->
       <!-- 상세화면 - 이미지 테스트 -->
-      <img src="{% static 'frontapp/images/test.jpg' %}" alt="test" 
+      <img src="{% static 'frontapp\images\test.jpg' %}" alt="test" 
             height="45%" width="45%">
       <br/>
       <!-- 하단에 아이콘 이미지로 버튼 넣기 -->
-      <!-- 이미지 3장을 한 줄로 나열하기 -->
-      <!-- <img src="{% static 'frontapp/images/찜하기.png' %}" width="15%" height="auto">
-      <br/>
-      <img src="{% static 'frontapp/images/홈화면.png' %}" width="15%" height="auto">
-      <br/>
-      <img src="{% static 'frontapp/images/길찾기_버튼.png' %}" width="15%" height="auto">
-      <br/> -->
-
-      <!-- <img src="{% static 'frontapp/images/공유하기.png' %}" width="15%" height="auto">
-      <br/> -->
-      <!-- <div id="wrap">
-            
-      </div> -->
-      
+      <!-- 이미지 4장을 한 줄로 나열하기 -->
+      <img src="{% static 'frontapp\images\button\찜하기.png' %}" width="15%" height="auto">
+      <img src="{% static 'frontapp\images\button\홈화면.png' %}" width="15%" height="auto">
+      <img src="{% static 'frontapp\images\button\길찾기.png' %}" width="15%" height="auto">
+      <img src="{% static 'frontapp\images\button\공유하기.png' %}" width="15%" height="auto">
 </body>
 </html>

@@ -22,10 +22,12 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     ### http://127.0.0.1:8000/main/
+    
+    path('', views.index),
     path('index/', views.index),
     path('main/', views.main),
+    path('map/', views.map),
     path('detailView/', views.detailView),
-    path('direction/', views.direction),
-    path('favorite/', views.favorite)
-
+    path('favorite/', views.favorite),
+    path('direction/', views.direction)
 ]

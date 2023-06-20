@@ -12,17 +12,22 @@ def main(request):
                 "frontapp/main.html",
                 {})
     
+def map(request):
+    return render(request,
+                "frontapp/map.html",
+                {})
+
 def detailView(request):
     return render(request,
                 "frontapp/detailView.html",
                 {})
     
-def direction(request):
-    return render(request,
-                "frontapp/direction.html",
-                {})
-    
 def favorite(request):
     return render(request,
                 "frontapp/favorite.html",
+                {})
+
+def direction(request):
+    return render(request,
+                "frontapp/direction.html",
                 {})
